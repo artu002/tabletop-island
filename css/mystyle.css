@@ -1,0 +1,257 @@
+
+        .top-menu{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*top part - left corner*/
+
+        .top-title{
+            display: flex; 
+                      
+        }
+        
+
+        .top-title img{
+            width:120px;
+            height:120px;
+            
+        }
+
+        .top-title h1{
+            font-size: 60px;
+           color:rgb(196, 160, 113) ;
+            text-shadow: 0 0 5px #98ee98, 0 0 7px #9292f3;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        .top-title p{
+            font-size: 15px; 
+            padding-top: 10px;
+            font-weight: bold;     
+        }
+
+        .top-title a{
+            text-decoration: none;
+        }
+
+        .top-title a:link{
+            color:rgb(196, 160, 113) ;
+        }
+
+        .top-title a:visited{
+            color:rgb(196, 160, 113) ;
+        }
+
+    
+
+        .top-description{
+             
+             margin-left: 10px;
+             
+            /*height: 0px;
+            vertical-align: top; */
+        }
+
+        .top-description h1{
+         margin: 0;
+         padding: 0;
+        }
+
+        /*top part middle - menu*/
+
+        .top-list {
+            list-style-type: none;
+            background-color: rgb(218, 200, 176);/*doesnt work so added below*/
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-list li{
+            float: left;
+            background-color: rgb(218, 200, 176) ;
+            border:1px solid black;
+            border-radius: 5px;
+        }
+
+        .top-list li a {
+            display: inline-block;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+        .top-list li a:hover {
+            background-color: #777;
+        }
+
+        .top-list li a:active{
+            background-color: red;
+        }
+
+        /*top part right corner*/
+
+        
+        .top-logo img {
+            width: 160px;
+            height: 140px;
+            position: relative;
+            right: 0;
+            top: 0;
+
+        }
+
+
+        /* index main part*/
+        
+        .backgroundfill{
+            background-image: url("../Pictures/Kingsburg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+         }
+        
+
+         .all-blocks img{
+            max-width: 400px;
+            max-height: 400px;
+            margin: 10px;
+         }
+
+         .main-block{
+            background-color: white;
+            width: 50%;
+            display: block;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+         }
+
+         .first-block-content{
+            display: flex;
+         }
+
+         .first-block-content h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 5px;
+         }
+
+         .first-block-content p{
+            font-family: Helvetica, sans-serif;
+            margin: 5px;
+         }
+
+         /* myfavgames main part*/
+
+         .all-blocks-fav img{
+            max-width: 200px;
+            max-height: 200px;
+            margin: 10px;
+         }
+
+         .main-block-fav{
+            background-color: white;
+            width: 50%;
+            display: block;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+         }
+
+         .main-block-fav-2{
+            background-color: white;
+            width: 25%;
+            display: block;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+         }
+
+         .main-block-fav h2{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+         }
+
+         .emptyheart{
+            cursor: pointer;
+         }
+
+         
+
+         /*table elements*/
+
+        .fav-table a{
+            text-decoration: none;
+         }
+
+         .fav-table{
+            width:100%;
+
+         }
+
+         .fav-table td{
+            text-align: left;
+            border-bottom: 1px solid black;
+         }
+
+         .fav-table img{
+            display: block;
+            margin: auto;
+            padding: 5px;
+         }
+
+         .fav-table p{
+            margin: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+
+         /* form elements*/
+
+         .main-form{
+            margin-left: 10px; 
+         }
+
+
+         /*gallery main part*/
+
+         .all-blocks-gal img{
+            max-width: 400px;
+            max-height: 400px;
+            margin: 10px;
+         }
+
+         .main-block-gal{
+            background-color: white;
+            width: 90%;
+            display: block;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+         }
+
+         
+         .main-block-gal h2{
+            text-align: center;
+            font-size: 40px;
+         }
+
+         .main-block-gal-2{
+            background-color: white;
+            width: 20%;
+            display: block;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+         }
+
+         .table-gal{
+            overflow-x:auto;
+         }
+
+
+
