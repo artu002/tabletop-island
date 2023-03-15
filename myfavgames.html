@@ -1,0 +1,194 @@
+<!-- 
+    on this page
+    - clickable hearts for likes
+    - comments
+    - paragraphs that are saved for later
+    see favgames.js
+-->
+
+
+<!doctype html> 
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Tabletop Island</title>
+
+    <link rel="icon" type="image/x-con" href="Pictures/images.png">
+    <link rel="stylesheet" href="css/mystyle.css">
+   
+    
+    </head>
+
+    <body onload="pageLoad()">
+
+        <div class="top-menu">
+            <div class="top-title">
+                <img src="Pictures/images.png" alt="Logo">
+                <div class="top-description">
+                    <h1><a href="index.html"> Tabletop Island</a></h1>
+                    <p><q><cite>The goal is to win, but it is the goal that is important, not the winning.</cite></q> Reiner Knizia</p>
+                </div>
+            </div>
+
+            <div>
+                <ul class="top-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a style="background-color: green;" href="myfavgames.html">My Favourite Games</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="https://www.boardgamegeek.com" target="_blank">BoardGameGeek</a></li>
+                  </ul>
+            </div>
+
+            <div class="top-logo">
+                <img src="Pictures/palm logo.jpg" alt="Palm logo">
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        <div class="backgroundfill">
+
+            <br>
+            <div class="all-blocks-fav">
+                <div class="main-block-fav">
+                   <h2>My favourite Board Games</h2>
+                   <hr>
+
+<!--Games summaries come from descriptions from publishers on BGG website -->
+
+                    <table class="fav-table">
+                        <tr>
+                            <td><img src="Pictures/Elder Sign.jpg"> </td>
+                            <td><h2><a href="https://boardgamegeek.com/boardgame/100423/elder-sign" target="_blank"> Elder Sign</a></h2></td>
+                            <td><p onclick="addParagraph(this)">Elder Sign is a fast-paced, cooperative dice game of supernatural 
+                                intrigue for one to eight players by Richard Launius and Kevin Wilson, 
+                                the designers of Arkham Horror. Players take the roles of investigators
+                                 racing against time to stave off the imminent return of the Ancient
+                                  One. Armed with tools, allies, and occult knowledge, investigators
+                                   must put their sanity and stamina to the test as they adventure
+                                    to locate Elder Signs, the eldritch symbols used to seal away
+                                     the Ancient Ones and win the game.
+                            </p></td>
+                            <td><img src="Pictures/heartempty.png" class="emptyheart"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="Pictures/Project Elite.jpg"></td>
+                            <td><h2><a href="https://boardgamegeek.com/boardgame/256999/project-elite" target="_blank"> Project Elite</a></h2></td>
+                            <td><p onclick="addParagraph(this)">In Project: ELITE, players are members of the ELITE squad on a mission
+                                 to stop the invading forces of an alien empire. Stopping the invasion
+                                  requires players to speedily roll dice as they take part in real-time,
+                                   two-minute combat rounds against waves of terrifying enemies. Once the ELITE
+                                    members take their turn, the aliens react. The game continues in this
+                                     fast-yet-tactical series of rounds until the scenario is won or the aliens
+                                      take the Earth.</p></td>
+                            <td><img src="Pictures/heartempty.png" class="emptyheart"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="Pictures/Star Realms.jpg"></td>
+                            <td><h2><a href="https://boardgamegeek.com/boardgame/147020/star-realms" target="_blank">Star Realms</a></h2></td>
+                            <td><p onclick="addParagraph(this)">Star Realms is a fast paced deck-building card game of outer space combat. 
+                                It combines the fun of a deck-building game with the interactivity of Trading Card Game
+                                 style combat. As you play, you make use of Trade to acquire new Ships and Bases
+                                  from the cards being turned face up in the Trade Row from the Trade Deck. You use
+                                   the Ships and Bases you acquire to either generate more Trade or to generate Combat
+                                    to attack your opponent and their bases. When you reduce your opponents score 
+                                    (called Authority) to zero, you win!</p></td>
+                            <td><img src="Pictures/heartempty.png" class="emptyheart"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="Pictures/Ancient Terrible Things.jpg"></td>
+                            <td><h2><a href="https://boardgamegeek.com/boardgame/137031/ancient-terrible-things" target="_blank"> Ancient Terrible Things</a></h2></td>
+                            <td><p onclick="addParagraph(this)">In Ancient Terrible Things, a pulp horror adventure game for 2-4 players, you play the role
+                                 of an intrepid adventurer, exploring a dark jungle river. Each turn you must travel to
+                                  a Fateful Location, face an Ominous Encounter, and attempt to unlock its Ancient Secrets. 
+                                  If you succeed (using a combination of dice, tokens and cards), you add the Secrets to your 
+                                  score; if you fail, you unleash a Terrible Thing, which counts against your score at the end 
+                                  of the game. The object of the game is to be the player with the most Ancient Secrets when 
+                                  the game ends at the Unspeakable Event.</p></td>
+                            <td><img src="Pictures/heartempty.png" class="emptyheart"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="Pictures/Mansions.jpg"></td>
+                            <td><h2><a href="https://boardgamegeek.com/boardgame/205059/mansions-madness-second-edition" target="_blank"> Mansions of Madness</a></h2></td>
+                            <td><p onclick="addParagraph(this)">Mansions of Madness: Second Edition is a fully co-operative, app-driven board game of 
+                                horror and mystery for one to five players that takes place in the same universe as Eldritch 
+                                Horror and Elder Sign. Let the immersive app guide you through the veiled streets of Innsmouth 
+                                and the haunted corridors of Arkham's cursed mansions as you search for answers and respite. 
+                                Eight brave investigators stand ready to confront four scenarios of fear and mystery, collecting
+                                 weapons, tools, and information, solving complex puzzles, and fighting monsters, insanity, and 
+                                 death. Open the door and step inside these hair-raising Mansions of Madness. 
+                                 It will take more than just survival to conquer the evils terrorizing this town.</p></td>
+                            <td><img src="Pictures/heartempty.png" class="emptyheart"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+                <br>
+                <div class="main-block-fav-2">
+                    <div class="main-form">
+                        <h4>Which of those games do you like the most?</h4>
+                        <p> Let me know which of those games is the best in your opinion.</p>
+                        <p>Thanks for sharing!</p>
+                        <div class="main-form">
+                            <form>
+                                <!--Drop-down menu-->
+                                <select>
+                                    <option>...Choose...</option>
+                                    <option>Elder Sign</option>
+                                    <option>Project Elite</option>
+                                    <option>Star Realms</option>
+                                    <option>Ancient Terrible Things</option>
+                                    <option>Mansions of Madness</option>
+                                </select>
+                                
+                                <br><br>
+                                <input type="submit" id="favGame" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="main-block-fav">
+                        <div class="main-form">
+                            <h4>Comments</h4>
+                            <input id="commId" type="text" placeholder="Comment">
+                            <button id="postId" onclick="addComment()">Post</button>
+                            <div id="comDiv">
+                                
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <a href="savedForLater.html">Saved for later</a>
+        <script src="favgames.js"></script>
+    </body>
+
+</html>
